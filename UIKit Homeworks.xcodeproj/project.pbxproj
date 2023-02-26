@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE254EE729ABD72F000993A7 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE254EE629ABD72F000993A7 /* BirthdayViewController.swift */; };
+		EE254EE929ABF51C000993A7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE254EE829ABF51C000993A7 /* AddViewController.swift */; };
 		EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C72985B104007BADE5 /* AppDelegate.swift */; };
 		EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C92985B104007BADE5 /* SceneDelegate.swift */; };
 		EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39CB2985B104007BADE5 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE254EE629ABD72F000993A7 /* BirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
+		EE254EE829ABF51C000993A7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		EE9E39C42985B104007BADE5 /* UIKit Homeworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Homeworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9E39C72985B104007BADE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9E39C92985B104007BADE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				EE9E39C72985B104007BADE5 /* AppDelegate.swift */,
 				EE9E39C92985B104007BADE5 /* SceneDelegate.swift */,
 				EE9E39CB2985B104007BADE5 /* ViewController.swift */,
+				EE254EE629ABD72F000993A7 /* BirthdayViewController.swift */,
+				EE254EE829ABF51C000993A7 /* AddViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
 				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE254EE929ABF51C000993A7 /* AddViewController.swift in Sources */,
 				EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */,
+				EE254EE729ABD72F000993A7 /* BirthdayViewController.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
 				EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */,
 			);
