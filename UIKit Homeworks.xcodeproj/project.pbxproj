@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE2D073329C0CD9F005EBF56 /* MusicPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2D073229C0CD9F005EBF56 /* MusicPlayViewController.swift */; };
 		EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C72985B104007BADE5 /* AppDelegate.swift */; };
 		EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C92985B104007BADE5 /* SceneDelegate.swift */; };
 		EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39CB2985B104007BADE5 /* ViewController.swift */; };
 		EE9E39CF2985B104007BADE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39CD2985B104007BADE5 /* Main.storyboard */; };
 		EE9E39D12985B106007BADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D02985B106007BADE5 /* Assets.xcassets */; };
 		EE9E39D42985B106007BADE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */; };
+		EEEA50AB29C4CFF2004DC134 /* Die Hard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEEA50A829C4CFF2004DC134 /* Die Hard.mp3 */; };
+		EEEA50AC29C4CFF2004DC134 /* Location.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEEA50A929C4CFF2004DC134 /* Location.mp3 */; };
+		EEEA50AD29C4CFF2004DC134 /* Nikes On My Feet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEEA50AA29C4CFF2004DC134 /* Nikes On My Feet.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE2D073229C0CD9F005EBF56 /* MusicPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayViewController.swift; sourceTree = "<group>"; };
 		EE9E39C42985B104007BADE5 /* UIKit Homeworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Homeworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9E39C72985B104007BADE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9E39C92985B104007BADE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		EE9E39D02985B106007BADE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9E39D32985B106007BADE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE9E39D52985B106007BADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEEA50A829C4CFF2004DC134 /* Die Hard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Die Hard.mp3"; sourceTree = "<group>"; };
+		EEEA50A929C4CFF2004DC134 /* Location.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Location.mp3; sourceTree = "<group>"; };
+		EEEA50AA29C4CFF2004DC134 /* Nikes On My Feet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nikes On My Feet.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,12 @@
 			children = (
 				EE9E39C72985B104007BADE5 /* AppDelegate.swift */,
 				EE9E39C92985B104007BADE5 /* SceneDelegate.swift */,
+				EE2D073229C0CD9F005EBF56 /* MusicPlayViewController.swift */,
 				EE9E39CB2985B104007BADE5 /* ViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
+				EEEA50A829C4CFF2004DC134 /* Die Hard.mp3 */,
+				EEEA50A929C4CFF2004DC134 /* Location.mp3 */,
+				EEEA50AA29C4CFF2004DC134 /* Nikes On My Feet.mp3 */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
 				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
 				EE9E39D52985B106007BADE5 /* Info.plist */,
@@ -126,8 +138,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9E39D42985B106007BADE5 /* LaunchScreen.storyboard in Resources */,
+				EEEA50AD29C4CFF2004DC134 /* Nikes On My Feet.mp3 in Resources */,
 				EE9E39D12985B106007BADE5 /* Assets.xcassets in Resources */,
+				EEEA50AC29C4CFF2004DC134 /* Location.mp3 in Resources */,
 				EE9E39CF2985B104007BADE5 /* Main.storyboard in Resources */,
+				EEEA50AB29C4CFF2004DC134 /* Die Hard.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,7 @@
 			files = (
 				EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
+				EE2D073329C0CD9F005EBF56 /* MusicPlayViewController.swift in Sources */,
 				EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
