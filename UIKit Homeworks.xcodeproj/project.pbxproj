@@ -13,6 +13,8 @@
 		EE9E39CF2985B104007BADE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39CD2985B104007BADE5 /* Main.storyboard */; };
 		EE9E39D12985B106007BADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D02985B106007BADE5 /* Assets.xcassets */; };
 		EE9E39D42985B106007BADE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */; };
+		EEEA50B029CA4242004DC134 /* SelectedItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA50AF29CA4242004DC134 /* SelectedItemViewController.swift */; };
+		EEEA50B229CF85C9004DC134 /* ShoppingBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA50B129CF85C8004DC134 /* ShoppingBagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		EE9E39D02985B106007BADE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9E39D32985B106007BADE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE9E39D52985B106007BADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEEA50AE29C9E2DA004DC134 /* adidas_samba_white_first.jpg.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = adidas_samba_white_first.jpg.webp; sourceTree = "<group>"; };
+		EEEA50AF29CA4242004DC134 /* SelectedItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedItemViewController.swift; sourceTree = "<group>"; };
+		EEEA50B129CF85C8004DC134 /* ShoppingBagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBagViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 		EE9E39BB2985B103007BADE5 = {
 			isa = PBXGroup;
 			children = (
+				EEEA50B129CF85C8004DC134 /* ShoppingBagViewController.swift */,
 				EE9E39C62985B104007BADE5 /* UIKit Homeworks */,
 				EE9E39C52985B104007BADE5 /* Products */,
 			);
@@ -59,10 +65,12 @@
 				EE9E39C72985B104007BADE5 /* AppDelegate.swift */,
 				EE9E39C92985B104007BADE5 /* SceneDelegate.swift */,
 				EE9E39CB2985B104007BADE5 /* ViewController.swift */,
+				EEEA50AF29CA4242004DC134 /* SelectedItemViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
 				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
 				EE9E39D52985B106007BADE5 /* Info.plist */,
+				EEEA50AE29C9E2DA004DC134 /* adidas_samba_white_first.jpg.webp */,
 			);
 			path = "UIKit Homeworks";
 			sourceTree = "<group>";
@@ -138,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEA50B029CA4242004DC134 /* SelectedItemViewController.swift in Sources */,
 				EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
 				EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */,
+				EEEA50B229CF85C9004DC134 /* ShoppingBagViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
