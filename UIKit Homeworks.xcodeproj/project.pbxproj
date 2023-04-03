@@ -13,6 +13,10 @@
 		EE9E39CF2985B104007BADE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39CD2985B104007BADE5 /* Main.storyboard */; };
 		EE9E39D12985B106007BADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D02985B106007BADE5 /* Assets.xcassets */; };
 		EE9E39D42985B106007BADE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */; };
+		EEF7A5C229D25386008231C0 /* CategoryProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7A5C129D25386008231C0 /* CategoryProductViewController.swift */; };
+		EEF7A5C629D31097008231C0 /* CategoryPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7A5C529D31097008231C0 /* CategoryPizzaViewController.swift */; };
+		EEF7A5CC29D354D4008231C0 /* PizzaIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7A5CB29D354D4008231C0 /* PizzaIngredientsViewController.swift */; };
+		EEF7A5CE29D476A0008231C0 /* ShoppingBagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7A5CD29D476A0008231C0 /* ShoppingBagViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EE9E39D02985B106007BADE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9E39D32985B106007BADE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE9E39D52985B106007BADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF7A5C129D25386008231C0 /* CategoryProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductViewController.swift; sourceTree = "<group>"; };
+		EEF7A5C529D31097008231C0 /* CategoryPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPizzaViewController.swift; sourceTree = "<group>"; };
+		EEF7A5CB29D354D4008231C0 /* PizzaIngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PizzaIngredientsViewController.swift; path = "UIKit Homeworks/PizzaIngredientsViewController.swift"; sourceTree = "<group>"; };
+		EEF7A5CD29D476A0008231C0 /* ShoppingBagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBagViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,9 @@
 		EE9E39BB2985B103007BADE5 = {
 			isa = PBXGroup;
 			children = (
+				EEF7A5CD29D476A0008231C0 /* ShoppingBagViewController.swift */,
+				EEF7A5C529D31097008231C0 /* CategoryPizzaViewController.swift */,
+				EEF7A5CB29D354D4008231C0 /* PizzaIngredientsViewController.swift */,
 				EE9E39C62985B104007BADE5 /* UIKit Homeworks */,
 				EE9E39C52985B104007BADE5 /* Products */,
 			);
@@ -59,6 +70,7 @@
 				EE9E39C72985B104007BADE5 /* AppDelegate.swift */,
 				EE9E39C92985B104007BADE5 /* SceneDelegate.swift */,
 				EE9E39CB2985B104007BADE5 /* ViewController.swift */,
+				EEF7A5C129D25386008231C0 /* CategoryProductViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
 				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF7A5C229D25386008231C0 /* CategoryProductViewController.swift in Sources */,
+				EEF7A5CE29D476A0008231C0 /* ShoppingBagViewController.swift in Sources */,
 				EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
 				EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */,
+				EEF7A5CC29D354D4008231C0 /* PizzaIngredientsViewController.swift in Sources */,
+				EEF7A5C629D31097008231C0 /* CategoryPizzaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
