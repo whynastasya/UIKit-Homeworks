@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7B6-VP-lFH">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="juR-aJ-P7Z">
+            <objects>
+                <tabBarController modalTransitionStyle="flipHorizontal" id="7B6-VP-lFH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nhc-ws-Vbb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                        <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gIy-o5-n2P" kind="relationship" relationship="viewControllers" id="5gx-6H-QxX"/>
+                        <segue destination="aEN-G0-brp" kind="relationship" relationship="viewControllers" id="QRQ-A1-hDq"/>
+                        <segue destination="q6a-xp-R9r" kind="relationship" relationship="viewControllers" id="Wpz-EN-KBt"/>
+                        <segue destination="x4O-RR-OPi" kind="relationship" relationship="viewControllers" id="aKm-Th-wuS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xZV-qX-Gbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-258"/>
+        </scene>
+        <!--Секундомер-->
+        <scene sceneID="QJa-XF-BGb">
+            <objects>
+                <viewController id="q6a-xp-R9r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O2l-5P-td8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nf4-UP-cHk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Секундомер" id="Jnj-EE-c7o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Udl-vN-130" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="-478"/>
+        </scene>
+        <!--Global-->
+        <scene sceneID="Ijc-Lm-pyz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Global" id="gIy-o5-n2P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="JZq-rd-Ydj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tab-Qm-2d4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="-314"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="DdS-sg-W4h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Timer" id="aEN-G0-brp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ih3-eY-sgM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tag-w3-Zbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="-153"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="St0-o1-Ygl">
+            <objects>
+                <viewController id="x4O-RR-OPi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQa-KP-Tb7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ohh-iE-S6C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Pvq-D3-RTi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6N-JK-X0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392" y="-68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
