@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5433FD29DB42980059DB7C /* AddTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5433FC29DB42980059DB7C /* AddTextViewController.swift */; };
+		EE5433FF29DB42B80059DB7C /* TextEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5433FE29DB42B80059DB7C /* TextEditorViewController.swift */; };
 		EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C72985B104007BADE5 /* AppDelegate.swift */; };
 		EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C92985B104007BADE5 /* SceneDelegate.swift */; };
 		EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39CB2985B104007BADE5 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE5433FC29DB42980059DB7C /* AddTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTextViewController.swift; sourceTree = "<group>"; };
+		EE5433FE29DB42B80059DB7C /* TextEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorViewController.swift; sourceTree = "<group>"; };
 		EE9E39C42985B104007BADE5 /* UIKit Homeworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Homeworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9E39C72985B104007BADE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9E39C92985B104007BADE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				EE9E39C72985B104007BADE5 /* AppDelegate.swift */,
 				EE9E39C92985B104007BADE5 /* SceneDelegate.swift */,
 				EE9E39CB2985B104007BADE5 /* ViewController.swift */,
+				EE5433FC29DB42980059DB7C /* AddTextViewController.swift */,
+				EE5433FE29DB42B80059DB7C /* TextEditorViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
 				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
@@ -140,7 +146,9 @@
 			files = (
 				EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
+				EE5433FF29DB42B80059DB7C /* TextEditorViewController.swift in Sources */,
 				EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */,
+				EE5433FD29DB42980059DB7C /* AddTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
