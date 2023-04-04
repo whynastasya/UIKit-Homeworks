@@ -13,10 +13,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        window?.windowScene = windowScene
+        
+        let firstViewController = AddTextViewController()
+        let secondViewController = TextEditorViewController()
+        let firstNavigationController = UINavigationController(rootViewController: firstViewController)
+        let secondNavigationController = UINavigationController(rootViewController: secondViewController)
+        
+        firstViewController.title = "Text Editor"
+        firstViewController.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 25, weight: .heavy)]
+        secondViewController.title = "Settings"
+        secondViewController.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 25, weight: .heavy)]
+        
+        
+        
+        let tabBarController = UITabBarController()
+        tabBarController.setViewControllers([firstNavigationController, secondNavigationController], animated: true)
+        firstNavigationController.tabBarItem.image = UIImage(systemName: "heart.text.square")
+        secondNavigationController.tabBarItem.image = UIImage(systemName: "pencil.circle")
+        tabBarController.tabBar.tintColor = .systemPink
+        window?.rootViewController = tabBarController
+        window?.backgroundColor = .white
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
