@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "iPhone Leather Wallet with MagSafe_4.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
