@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE54340729DF1C750059DB7C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE54340629DF1C750059DB7C /* SettingsViewController.swift */; };
+		EE54342929E21E2E0059DB7C /* TextSettingsViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE54342829E21E2E0059DB7C /* TextSettingsViewControllerDelegate.swift */; };
 		EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C72985B104007BADE5 /* AppDelegate.swift */; };
 		EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C92985B104007BADE5 /* SceneDelegate.swift */; };
 		EE9E39CC2985B104007BADE5 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39CB2985B104007BADE5 /* BookViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		EE54340629DF1C750059DB7C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EE54342829E21E2E0059DB7C /* TextSettingsViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSettingsViewControllerDelegate.swift; sourceTree = "<group>"; };
 		EE9E39C42985B104007BADE5 /* UIKit Homeworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Homeworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9E39C72985B104007BADE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9E39C92985B104007BADE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				EE9E39C92985B104007BADE5 /* SceneDelegate.swift */,
 				EE9E39CB2985B104007BADE5 /* BookViewController.swift */,
 				EE54340629DF1C750059DB7C /* SettingsViewController.swift */,
+				EE54342829E21E2E0059DB7C /* TextSettingsViewControllerDelegate.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
 				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9E39CC2985B104007BADE5 /* BookViewController.swift in Sources */,
+				EE54342929E21E2E0059DB7C /* TextSettingsViewControllerDelegate.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
 				EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */,
 				EE54340729DF1C750059DB7C /* SettingsViewController.swift in Sources */,

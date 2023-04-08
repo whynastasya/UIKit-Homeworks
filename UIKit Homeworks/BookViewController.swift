@@ -7,8 +7,7 @@
 
 import UIKit
 
-class BookViewController: UIViewController {
-    
+final class BookViewController: UIViewController {
     
     @IBOutlet weak var bookTextView: UITextView!
     
@@ -17,57 +16,91 @@ class BookViewController: UIViewController {
         
         bookTextView.isEditable = false
         bookTextView.textColor = .black
-
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
         segue.destination.preferredContentSize = CGSize(width: 300, height: 300)
         guard
             let popoverPresentationController = segue.destination.popoverPresentationController,
-              let settingsViewController = segue.destination as? SettingsViewController
+              let textSettingsViewController = segue.destination as? TextSettingsViewController
         else { return }
         popoverPresentationController.delegate = self
-        settingsViewController.settingsDelegate = self
+        textSettingsViewController.settingsDelegate = self
     }
 }
 
+// MARK: - UIPopoverPresentationControllerDelegate
+
 extension BookViewController: UIPopoverPresentationControllerDelegate {
-    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+    func adaptivePresentationStyle(
+        for controller: UIPresentationController,
+        traitCollection: UITraitCollection
+    ) -> UIModalPresentationStyle {
         return .none
     }
 }
 
-extension BookViewController: SettingsViewControllerDelegate {
-    func settingsViewController(_ settingsViewController: SettingsViewController, didChangeTextColor textColor: UIColor) {
+// MARK: - TextSettingsViewControllerDelegate
+
+extension BookViewController: TextSettingsViewControllerDelegate {
+    func textSettingsViewController(
+        _ textSettingsViewController: TextSettingsViewController,
+        didSelectColor textColor: UIColor
+    ) {
         bookTextView.textColor = textColor
     }
     
-    func settingsViewController(_ settingsViewController: SettingsViewController, didChangeTheme darkTheme: Bool) {
+    func textSettingsViewController(
+        _ textSettingsViewController: TextSettingsViewController,
+        didSelectDarkTheme darkTheme: Bool
+    ) {
         if darkTheme == true {
-            view.backgroundColor = .black
-            bookTextView.backgroundColor = .black
-            navigationItem.rightBarButtonItem?.tintColor = .white
-            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 30, weight: .heavy)]
-            if bookTextView.textColor == .black {
-                bookTextView.textColor = .white
-            }
+            changeThemeToDark()
         } else {
-            view.backgroundColor = .white
-            bookTextView.backgroundColor = .white
-            navigationItem.rightBarButtonItem?.tintColor = .black
-            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 30, weight: .heavy)]
-            if bookTextView.textColor == .white {
-                bookTextView.textColor = .black
-            }
+            changeThemeToLight()
         }
     }
     
-    func settingsViewController(_ settingsViewController: SettingsViewController, didChangeTextFont textFont: UIFont) {
+    func textSettingsViewController(
+        _ textSettingsViewController: TextSettingsViewController,
+        didSelectFont textFont: UIFont
+    ) {
         bookTextView.font = textFont
     }
     
-    func settingsViewController(_ settingsViewController: SettingsViewController, didChangeTextSize textSize: CGFloat) {
-        bookTextView.font = bookTextView.font?.withSize(textSize)
+    func textSettingsViewController(
+        _ textSettingsViewController: TextSettingsViewController,
+        didSelectSize size: CGFloat
+    ) {
+        bookTextView.font = bookTextView.font?.withSize(size)
+    }
+    
+    private func changeThemeToDark() {
+        view.backgroundColor = .black
+        bookTextView.backgroundColor = .black
+        navigationItem.rightBarButtonItem?.tintColor = .white
+        navigationController?.navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 30,
+            weight: .heavy)
+        ]
+        if bookTextView.textColor == .black {
+            bookTextView.textColor = .white
+        }
+    }
+    
+    private func changeThemeToLight() {
+        view.backgroundColor = .white
+        bookTextView.backgroundColor = .white
+        navigationItem.rightBarButtonItem?.tintColor = .black
+        navigationController?.navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor.black,
+            .font: UIFont.systemFont(ofSize: 30,
+            weight: .heavy)
+        ]
+        if bookTextView.textColor == .white {
+            bookTextView.textColor = .black
+        }
     }
 }

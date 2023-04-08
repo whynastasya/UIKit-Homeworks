@@ -42,7 +42,7 @@
                                 <rect key="frame" x="16" y="103" width="361" height="699"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">В общем, озадачься. Приказ метну.
+                                <string key="text">В общем, озадачься. Приказ метну.
 — Слушаюсь, товарищ полковник.
 
 — Ну, будь здоров, — с усталой улыбкой подмигнул Самохвалов и исчез.
@@ -64,7 +64,7 @@
 Молоточек звенел.
 
 Ужас заполнил глаза подследственного до предела. Дрожь оставила его, он замер, не дыша.
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="29.770992366412212" y="-2.1126760563380285"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Text Settings View Controller-->
         <scene sceneID="NTS-nG-INs">
             <objects>
-                <viewController id="VAr-vJ-vGG" customClass="SettingsViewController" customModule="UIKit_Homeworks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VAr-vJ-vGG" customClass="TextSettingsViewController" customModule="UIKit_Homeworks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WMc-m3-8Ex">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,7 +120,7 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="changeTextColor:" destination="VAr-vJ-vGG" eventType="touchUpInside" id="ibS-WN-ID0"/>
+                                    <action selector="selectTextColor:" destination="VAr-vJ-vGG" eventType="touchUpInside" id="ibS-WN-ID0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOO-E0-Q1g">
@@ -131,7 +131,7 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="changeTextColor:" destination="VAr-vJ-vGG" eventType="touchUpInside" id="AFf-Xc-Bfw"/>
+                                    <action selector="selectTextColor:" destination="VAr-vJ-vGG" eventType="touchUpInside" id="AFf-Xc-Bfw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsJ-qI-i8b">
@@ -143,7 +143,7 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="changeTextColor:" destination="VAr-vJ-vGG" eventType="touchUpInside" id="5Fz-SM-y3H"/>
+                                    <action selector="selectTextColor:" destination="VAr-vJ-vGG" eventType="touchUpInside" id="5Fz-SM-y3H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFw-Lk-xmU">
@@ -155,7 +155,7 @@
                                     <color key="baseForegroundColor" systemColor="tintColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="changeTextColor:" destination="VAr-vJ-vGG" eventType="touchUpInside" id="got-31-QKy"/>
+                                    <action selector="selectTextColor:" destination="VAr-vJ-vGG" eventType="touchUpInside" id="got-31-QKy"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pd0-cf-pX1">
@@ -169,7 +169,7 @@
                                 <imageReference key="minimumValueImage" image="textformat.size.smaller" catalog="system" symbolScale="small"/>
                                 <imageReference key="maximumValueImage" image="textformat.size.larger" catalog="system" symbolScale="large"/>
                                 <connections>
-                                    <action selector="changeTextSize:" destination="VAr-vJ-vGG" eventType="valueChanged" id="Ruf-aW-19i"/>
+                                    <action selector="selectTextSize:" destination="VAr-vJ-vGG" eventType="valueChanged" id="Ruf-aW-19i"/>
                                 </connections>
                             </slider>
                         </subviews>
