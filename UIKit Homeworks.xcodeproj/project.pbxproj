@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE7CA87029F144430020FF6D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA86F29F144430020FF6D /* ProductViewController.swift */; };
+		EE7CA87429F2C6380020FF6D /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87329F2C6380020FF6D /* Products.swift */; };
+		EE7CA87629F2DA3C0020FF6D /* ProductWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87529F2DA3C0020FF6D /* ProductWebViewController.swift */; };
+		EE7CA87829F56C3A0020FF6D /* ProductShowcaseRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87729F56C3A0020FF6D /* ProductShowcaseRepositoryDelegate.swift */; };
+		EE7CA87A29F56DAE0020FF6D /* ProductShowcaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87929F56DAE0020FF6D /* ProductShowcaseRepository.swift */; };
 		EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C72985B104007BADE5 /* AppDelegate.swift */; };
 		EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C92985B104007BADE5 /* SceneDelegate.swift */; };
 		EE9E39CC2985B104007BADE5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39CB2985B104007BADE5 /* SearchViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE7CA86F29F144430020FF6D /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		EE7CA87329F2C6380020FF6D /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		EE7CA87529F2DA3C0020FF6D /* ProductWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWebViewController.swift; sourceTree = "<group>"; };
+		EE7CA87729F56C3A0020FF6D /* ProductShowcaseRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductShowcaseRepositoryDelegate.swift; sourceTree = "<group>"; };
+		EE7CA87929F56DAE0020FF6D /* ProductShowcaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductShowcaseRepository.swift; sourceTree = "<group>"; };
 		EE9E39C42985B104007BADE5 /* UIKit Homeworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Homeworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9E39C72985B104007BADE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9E39C92985B104007BADE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +68,12 @@
 			children = (
 				EE9E39C72985B104007BADE5 /* AppDelegate.swift */,
 				EE9E39C92985B104007BADE5 /* SceneDelegate.swift */,
+				EE7CA87329F2C6380020FF6D /* Products.swift */,
+				EE7CA87729F56C3A0020FF6D /* ProductShowcaseRepositoryDelegate.swift */,
+				EE7CA87929F56DAE0020FF6D /* ProductShowcaseRepository.swift */,
 				EE9E39CB2985B104007BADE5 /* SearchViewController.swift */,
+				EE7CA86F29F144430020FF6D /* ProductViewController.swift */,
+				EE7CA87529F2DA3C0020FF6D /* ProductWebViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
 				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7CA87A29F56DAE0020FF6D /* ProductShowcaseRepository.swift in Sources */,
 				EE9E39CC2985B104007BADE5 /* SearchViewController.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
+				EE7CA87429F2C6380020FF6D /* Products.swift in Sources */,
+				EE7CA87629F2DA3C0020FF6D /* ProductWebViewController.swift in Sources */,
+				EE7CA87829F56C3A0020FF6D /* ProductShowcaseRepositoryDelegate.swift in Sources */,
 				EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */,
+				EE7CA87029F144430020FF6D /* ProductViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
