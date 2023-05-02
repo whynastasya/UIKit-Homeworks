@@ -20,6 +20,9 @@
 		EE9E39CF2985B104007BADE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39CD2985B104007BADE5 /* Main.storyboard */; };
 		EE9E39D12985B106007BADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D02985B106007BADE5 /* Assets.xcassets */; };
 		EEF9C87A29FF127B00D68E0C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9C87929FF127B00D68E0C /* TabBarController.swift */; };
+		EEF9C89C2A009A1900D68E0C /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9C89B2A009A1900D68E0C /* SplashScreenViewController.swift */; };
+		EEF9C8A02A009B4700D68E0C /* ItemForSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9C89F2A009B4700D68E0C /* ItemForSplashScreenViewController.swift */; };
+		EEF9C8A22A009D4A00D68E0C /* ItemForSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9C8A12A009D4A00D68E0C /* ItemForSplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		EE9E39D02985B106007BADE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9E39D52985B106007BADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEF9C87929FF127B00D68E0C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EEF9C89B2A009A1900D68E0C /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		EEF9C89F2A009B4700D68E0C /* ItemForSplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemForSplashScreenViewController.swift; sourceTree = "<group>"; };
+		EEF9C8A12A009D4A00D68E0C /* ItemForSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemForSplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 				EE7CA87529F2DA3C0020FF6D /* ProductWebViewController.swift */,
 				EE7CA87B29F6E1E00020FF6D /* UserViewController.swift */,
 				EEF9C87929FF127B00D68E0C /* TabBarController.swift */,
+				EEF9C89B2A009A1900D68E0C /* SplashScreenViewController.swift */,
+				EEF9C89F2A009B4700D68E0C /* ItemForSplashScreenViewController.swift */,
+				EEF9C8A12A009D4A00D68E0C /* ItemForSplashScreen.swift */,
 				EE7CA87F29F7ECDC0020FF6D /* LaunchViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
@@ -159,7 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF9C87A29FF127B00D68E0C /* TabBarController.swift in Sources */,
+				EEF9C8A22A009D4A00D68E0C /* ItemForSplashScreen.swift in Sources */,
 				EE7CA87A29F56DAE0020FF6D /* ProductShowcaseRepository.swift in Sources */,
+				EEF9C89C2A009A1900D68E0C /* SplashScreenViewController.swift in Sources */,
+				EEF9C8A02A009B4700D68E0C /* ItemForSplashScreenViewController.swift in Sources */,
 				EE7CA88029F7ECDD0020FF6D /* LaunchViewController.swift in Sources */,
 				EE7CA87C29F6E1E00020FF6D /* UserViewController.swift in Sources */,
 				EE9E39CC2985B104007BADE5 /* SearchViewController.swift in Sources */,
