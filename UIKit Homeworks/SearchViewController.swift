@@ -24,6 +24,8 @@ final class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tabBarController?.tabBar.backgroundColor = .black
+        
         let contentSizeWidth = productScroll.bounds.width * 1.7
         let contentSizeHeight = productScroll.bounds.height
         productScroll.contentSize = CGSize(width: contentSizeWidth, height: contentSizeHeight)

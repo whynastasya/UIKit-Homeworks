@@ -12,12 +12,14 @@
 		EE7CA87629F2DA3C0020FF6D /* ProductWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87529F2DA3C0020FF6D /* ProductWebViewController.swift */; };
 		EE7CA87829F56C3A0020FF6D /* ProductShowcaseRepositoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87729F56C3A0020FF6D /* ProductShowcaseRepositoryDelegate.swift */; };
 		EE7CA87A29F56DAE0020FF6D /* ProductShowcaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87929F56DAE0020FF6D /* ProductShowcaseRepository.swift */; };
+		EE7CA87C29F6E1E00020FF6D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87B29F6E1E00020FF6D /* UserViewController.swift */; };
+		EE7CA88029F7ECDD0020FF6D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CA87F29F7ECDC0020FF6D /* LaunchViewController.swift */; };
 		EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C72985B104007BADE5 /* AppDelegate.swift */; };
 		EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C92985B104007BADE5 /* SceneDelegate.swift */; };
 		EE9E39CC2985B104007BADE5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39CB2985B104007BADE5 /* SearchViewController.swift */; };
 		EE9E39CF2985B104007BADE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39CD2985B104007BADE5 /* Main.storyboard */; };
 		EE9E39D12985B106007BADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D02985B106007BADE5 /* Assets.xcassets */; };
-		EE9E39D42985B106007BADE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */; };
+		EEF9C87A29FF127B00D68E0C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9C87929FF127B00D68E0C /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,14 +28,16 @@
 		EE7CA87529F2DA3C0020FF6D /* ProductWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductWebViewController.swift; sourceTree = "<group>"; };
 		EE7CA87729F56C3A0020FF6D /* ProductShowcaseRepositoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductShowcaseRepositoryDelegate.swift; sourceTree = "<group>"; };
 		EE7CA87929F56DAE0020FF6D /* ProductShowcaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductShowcaseRepository.swift; sourceTree = "<group>"; };
+		EE7CA87B29F6E1E00020FF6D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		EE7CA87F29F7ECDC0020FF6D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		EE9E39C42985B104007BADE5 /* UIKit Homeworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Homeworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9E39C72985B104007BADE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9E39C92985B104007BADE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE9E39CB2985B104007BADE5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EE9E39CE2985B104007BADE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE9E39D02985B106007BADE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EE9E39D32985B106007BADE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE9E39D52985B106007BADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF9C87929FF127B00D68E0C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +78,11 @@
 				EE9E39CB2985B104007BADE5 /* SearchViewController.swift */,
 				EE7CA86F29F144430020FF6D /* ProductViewController.swift */,
 				EE7CA87529F2DA3C0020FF6D /* ProductWebViewController.swift */,
+				EE7CA87B29F6E1E00020FF6D /* UserViewController.swift */,
+				EEF9C87929FF127B00D68E0C /* TabBarController.swift */,
+				EE7CA87F29F7ECDC0020FF6D /* LaunchViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
-				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
 				EE9E39D52985B106007BADE5 /* Info.plist */,
 			);
 			path = "UIKit Homeworks";
@@ -140,7 +146,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE9E39D42985B106007BADE5 /* LaunchScreen.storyboard in Resources */,
 				EE9E39D12985B106007BADE5 /* Assets.xcassets in Resources */,
 				EE9E39CF2985B104007BADE5 /* Main.storyboard in Resources */,
 			);
@@ -153,7 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF9C87A29FF127B00D68E0C /* TabBarController.swift in Sources */,
 				EE7CA87A29F56DAE0020FF6D /* ProductShowcaseRepository.swift in Sources */,
+				EE7CA88029F7ECDD0020FF6D /* LaunchViewController.swift in Sources */,
+				EE7CA87C29F6E1E00020FF6D /* UserViewController.swift in Sources */,
 				EE9E39CC2985B104007BADE5 /* SearchViewController.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
 				EE7CA87429F2C6380020FF6D /* Products.swift in Sources */,
@@ -173,14 +181,6 @@
 				EE9E39CE2985B104007BADE5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE9E39D32985B106007BADE5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
