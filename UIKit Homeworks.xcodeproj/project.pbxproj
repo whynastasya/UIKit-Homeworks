@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C72985B104007BADE5 /* AppDelegate.swift */; };
 		EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39C92985B104007BADE5 /* SceneDelegate.swift */; };
-		EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39CB2985B104007BADE5 /* ViewController.swift */; };
+		EE9E39CC2985B104007BADE5 /* NewsFeedViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E39CB2985B104007BADE5 /* NewsFeedViewControllerViewController.swift */; };
 		EE9E39CF2985B104007BADE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39CD2985B104007BADE5 /* Main.storyboard */; };
 		EE9E39D12985B106007BADE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D02985B106007BADE5 /* Assets.xcassets */; };
 		EE9E39D42985B106007BADE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */; };
+		EEE456792A0D36C200D4208C /* RecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE456782A0D36C200D4208C /* RecommendationViewController.swift */; };
+		EEE4567B2A0D37F200D4208C /* AddPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4567A2A0D37F200D4208C /* AddPublicationViewController.swift */; };
+		EEE4567D2A0D380600D4208C /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4567C2A0D380600D4208C /* ReelsViewController.swift */; };
+		EEE4567F2A0D382A00D4208C /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4567E2A0D382A00D4208C /* UserAccountViewController.swift */; };
+		EEE456832A0D7A1400D4208C /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE456822A0D7A1400D4208C /* StoriesTableViewCell.swift */; };
+		EEE456852A0D967D00D4208C /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE456842A0D967D00D4208C /* Publication.swift */; };
+		EEE4568D2A1037D900D4208C /* PublicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4568C2A1037D900D4208C /* PublicationTableViewCell.swift */; };
+		EEE4568F2A1043AD00D4208C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4568E2A1043AD00D4208C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE9E39C42985B104007BADE5 /* UIKit Homeworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit Homeworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9E39C72985B104007BADE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9E39C92985B104007BADE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE9E39CB2985B104007BADE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE9E39CB2985B104007BADE5 /* NewsFeedViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewControllerViewController.swift; sourceTree = "<group>"; };
 		EE9E39CE2985B104007BADE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE9E39D02985B106007BADE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE9E39D32985B106007BADE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE9E39D52985B106007BADE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE456782A0D36C200D4208C /* RecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationViewController.swift; sourceTree = "<group>"; };
+		EEE4567A2A0D37F200D4208C /* AddPublicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPublicationViewController.swift; sourceTree = "<group>"; };
+		EEE4567C2A0D380600D4208C /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		EEE4567E2A0D382A00D4208C /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
+		EEE456822A0D7A1400D4208C /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
+		EEE456842A0D967D00D4208C /* Publication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
+		EEE4568C2A1037D900D4208C /* PublicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationTableViewCell.swift; sourceTree = "<group>"; };
+		EEE4568E2A1043AD00D4208C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +74,15 @@
 			children = (
 				EE9E39C72985B104007BADE5 /* AppDelegate.swift */,
 				EE9E39C92985B104007BADE5 /* SceneDelegate.swift */,
-				EE9E39CB2985B104007BADE5 /* ViewController.swift */,
+				EE9E39CB2985B104007BADE5 /* NewsFeedViewControllerViewController.swift */,
+				EEE456842A0D967D00D4208C /* Publication.swift */,
+				EEE4568E2A1043AD00D4208C /* User.swift */,
+				EEE4568C2A1037D900D4208C /* PublicationTableViewCell.swift */,
+				EEE456822A0D7A1400D4208C /* StoriesTableViewCell.swift */,
+				EEE456782A0D36C200D4208C /* RecommendationViewController.swift */,
+				EEE4567A2A0D37F200D4208C /* AddPublicationViewController.swift */,
+				EEE4567C2A0D380600D4208C /* ReelsViewController.swift */,
+				EEE4567E2A0D382A00D4208C /* UserAccountViewController.swift */,
 				EE9E39CD2985B104007BADE5 /* Main.storyboard */,
 				EE9E39D02985B106007BADE5 /* Assets.xcassets */,
 				EE9E39D22985B106007BADE5 /* LaunchScreen.storyboard */,
@@ -138,9 +162,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE9E39CC2985B104007BADE5 /* ViewController.swift in Sources */,
+				EE9E39CC2985B104007BADE5 /* NewsFeedViewControllerViewController.swift in Sources */,
+				EEE456852A0D967D00D4208C /* Publication.swift in Sources */,
+				EEE456832A0D7A1400D4208C /* StoriesTableViewCell.swift in Sources */,
+				EEE456792A0D36C200D4208C /* RecommendationViewController.swift in Sources */,
 				EE9E39C82985B104007BADE5 /* AppDelegate.swift in Sources */,
+				EEE4567B2A0D37F200D4208C /* AddPublicationViewController.swift in Sources */,
+				EEE4567D2A0D380600D4208C /* ReelsViewController.swift in Sources */,
+				EEE4568D2A1037D900D4208C /* PublicationTableViewCell.swift in Sources */,
 				EE9E39CA2985B104007BADE5 /* SceneDelegate.swift in Sources */,
+				EEE4567F2A0D382A00D4208C /* UserAccountViewController.swift in Sources */,
+				EEE4568F2A1043AD00D4208C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

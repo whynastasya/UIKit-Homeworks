@@ -13,10 +13,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window?.windowScene = windowScene
+        
+        let newsFeedViewController = UINavigationController(rootViewController: NewsFeedViewController())
+        
+        newsFeedViewController.tabBarItem.image = UIImage(systemName: "house")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        newsFeedViewController.tabBarItem.selectedImage = UIImage(systemName: "house.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        
+        let recommendationViewController = RecommendationViewController()
+        recommendationViewController.tabBarItem.image = UIImage(systemName: "magnifyingglass")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        
+        let publicationViewController = AddPublicationViewController()
+        publicationViewController.tabBarItem.image = UIImage(systemName: "plus.app")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        
+        let reelsViewController = ReelsViewController()
+        reelsViewController.tabBarItem.image = UIImage(systemName: "play.square")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        reelsViewController.tabBarItem.selectedImage = UIImage(systemName: "play.square.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        
+        let userAccountViewController = UserAccountViewController()
+        userAccountViewController.tabBarItem.image = UIImage(systemName: "person.circle")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        userAccountViewController.tabBarItem.selectedImage = UIImage(systemName: "person.circle.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        
+        let tabBarController = UITabBarController()
+        tabBarController.tabBar.backgroundColor = .black
+        tabBarController.setViewControllers([newsFeedViewController,
+                                             recommendationViewController,
+                                             publicationViewController,
+                                             reelsViewController,
+                                             userAccountViewController],
+                                             animated: true)
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
