@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum NotificationSection {
+    case today, week, month
+}

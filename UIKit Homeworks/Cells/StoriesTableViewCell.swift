@@ -2,27 +2,22 @@
 //  StoriesTableViewCell.swift
 //  UIKit Homeworks
 //
-//  Created by nastasya on 11.05.2023.
+//  Created by nastasya on 21.06.2023.
 //
 
 import UIKit
 
-final class StoriesTableViewCell: UITableViewCell {
+class StoriesTableViewCell: UITableViewCell {
     
-    private enum Constants {
-        static let storiesDimensions: CGFloat = 80
-        static let storiesXOffset: CGFloat = 15
-    }
-
     private let storiesScrollView = UIScrollView()
-    private var usersWithStoriesCount = 50
-    private var userAvatarImageViews = [UIImageView]()
-    private var userNameLabels = [UILabel]()
+    var usersWithStoriesCount = 50
+    var storiesPreviewImageViews = [UIImageView]()
+    var storiesNameLabels = [UILabel]()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupStoriesScrollView()
-        setupUserStoriesView()
+        updateLayoutStoriesView()
     }
     
     required init?(coder: NSCoder) {
@@ -50,66 +45,41 @@ final class StoriesTableViewCell: UITableViewCell {
         contentView.addSubview(storiesScrollView)
     }
     
-    private func setupUserStoriesView() {
-        for index in 0...usersWithStoriesCount {
-            let storiesView = UIView()
+    func createStoriesView() -> UIView {
+        let storiesView = UIView()
+        storiesView.layer.cornerRadius = Constants.storiesDimensions / 2
+        storiesView.backgroundColor = .darkGray.withAlphaComponent(0.4)
+        
+        return storiesView
+    }
+    
+    func updateLayoutStoriesView() {
+        for index in 0..<usersWithStoriesCount {
             let precedingStoriesWidths = CGFloat(index) * Constants.storiesDimensions
             let precedingStoriesOffsets = CGFloat(index + 1) * Constants.storiesXOffset
             let currentViewOffset =  precedingStoriesWidths + precedingStoriesOffsets
-            
+            let storiesView = createStoriesView()
             storiesView.frame = CGRectMake(
                 currentViewOffset,
                 10,
                 Constants.storiesDimensions,
                 Constants.storiesDimensions
             )
-            storiesView.layer.cornerRadius = Constants.storiesDimensions / 2
-            
-            let userAvatarImageView = createUserAvatarImageView()
-            storiesView.addSubview(userAvatarImageView)
-            
-            let userNameLabel = createUserNameLabelImageView()
-            storiesView.addSubview(userNameLabel)
-            userNameLabel.topAnchor.constraint(equalTo: storiesView.bottomAnchor, constant: 1).isActive = true
-            userNameLabel.centerXAnchor.constraint(equalTo: storiesView.centerXAnchor, constant: 1).isActive = true
-            
-            if index == 0 {
-                userAvatarImageView.image = UIImage(named: "userAvatar")
-                let plusImageView = createPlusImageView()
-                storiesView.addSubview(plusImageView)
-                userNameLabel.text = "Ваша история"
-            } else {
-                let gradientLayer = createGradientLayer()
-                storiesView.layer.insertSublayer(gradientLayer, at: 0)
-                userAvatarImageViews.append(userAvatarImageView)
-                userNameLabels.append(userNameLabel)
-            }
             storiesScrollView.addSubview(storiesView)
+            
+            let storyPreviewImageView = createStoryPreviewImageView()
+            storiesPreviewImageViews.append(storyPreviewImageView)
+            storiesView.addSubview(storyPreviewImageView)
+            
+            let storyNameLabel = createStoryNameLabel()
+            storiesView.addSubview(storyNameLabel)
+            storiesNameLabels.append(storyNameLabel)
+            storyNameLabel.topAnchor.constraint(equalTo: storiesView.bottomAnchor, constant: 1).isActive = true
+            storyNameLabel.centerXAnchor.constraint(equalTo: storiesView.centerXAnchor, constant: 1).isActive = true
         }
     }
     
-    private func createGradientLayer() -> CAGradientLayer {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = CGRect(
-            x: 0,
-            y: 0,
-            width: Constants.storiesDimensions,
-            height: Constants.storiesDimensions
-        )
-        gradientLayer.colors = [
-            UIColor.systemYellow.cgColor,
-            UIColor.systemOrange.cgColor,
-            UIColor.systemRed.cgColor,
-            UIColor.systemPink.cgColor,
-            UIColor.systemPurple.cgColor
-        ]
-        gradientLayer.startPoint = CGPointMake(0.1, 1)
-        gradientLayer.endPoint = CGPointMake(1, 0.5)
-        gradientLayer.cornerRadius = Constants.storiesDimensions / 2
-        return gradientLayer
-    }
-    
-    private func createUserAvatarImageView() -> UIImageView {
+    private func createStoryPreviewImageView() -> UIImageView {
         let userAvatarImageView = UIImageView()
         let userAvatarDimmension = Constants.storiesDimensions - 5
         userAvatarImageView.frame = CGRectMake(2, 2, userAvatarDimmension, userAvatarDimmension)
@@ -121,19 +91,7 @@ final class StoriesTableViewCell: UITableViewCell {
         return userAvatarImageView
     }
     
-    private func createPlusImageView() -> UIImageView {
-        let plusImageView = UIImageView()
-        plusImageView.image = UIImage(systemName: "plus.circle.fill")
-        plusImageView.tintColor = .systemBlue
-        plusImageView.backgroundColor = .white
-        plusImageView.frame = CGRect(x: 50, y: 50, width: 30, height: 30)
-        plusImageView.layer.cornerRadius = plusImageView.frame.width / 2
-        plusImageView.layer.borderWidth = 3
-        plusImageView.layer.borderColor = UIColor.black.cgColor
-        return plusImageView
-    }
-    
-    private func createUserNameLabelImageView() -> UILabel {
+    private func createStoryNameLabel() -> UILabel {
         let userNameLabel = UILabel()
         userNameLabel.textColor = .white
         userNameLabel.font = UIFont.systemFont(ofSize: 13)
@@ -145,12 +103,11 @@ final class StoriesTableViewCell: UITableViewCell {
         return userNameLabel
     }
     
-    func configure(with usersWithStories: [User]) {
-        usersWithStoriesCount = usersWithStories.count
+    func configure(with stories: [Story]) {
+        usersWithStoriesCount = stories.count
         for index in 0..<usersWithStoriesCount {
-            userAvatarImageViews[index].image = UIImage(named: usersWithStories[index].avatar)
-            userNameLabels[index].text = usersWithStories[index].name
+            storiesPreviewImageViews[index].image = UIImage(named: stories[index].preview)
+            storiesNameLabels[index].text = stories[index].name
         }
     }
-    
 }

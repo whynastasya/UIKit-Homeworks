@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         reelsViewController.tabBarItem.image = UIImage(systemName: "play.square")?.withTintColor(.white, renderingMode: .alwaysOriginal)
         reelsViewController.tabBarItem.selectedImage = UIImage(systemName: "play.square.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
         
-        let userAccountViewController = UserAccountViewController()
+        let userAccountViewController = UINavigationController(rootViewController:UserAccountViewController())
         userAccountViewController.tabBarItem.image = UIImage(systemName: "person.circle")?.withTintColor(.white, renderingMode: .alwaysOriginal)
         userAccountViewController.tabBarItem.selectedImage = UIImage(systemName: "person.circle.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
         
@@ -43,6 +43,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                                              reelsViewController,
                                              userAccountViewController],
                                              animated: true)
+        tabBarController.selectedViewController = userAccountViewController
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
     }

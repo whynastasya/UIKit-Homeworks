@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum NotificationType {
+    case like, comment, subscription
+}

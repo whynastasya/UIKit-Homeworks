@@ -8,6 +8,15 @@
 import Foundation
 
 struct User {
-    let name: String
-    let avatar: String
+    var userName: String
+    var name: String = ""
+    var avatar: String
+    var publications: [Publication] = []
+//    var followers: [User] = []
+//    var following: [User] = []
+    var followersCount: String = ""
+    var followingCount: String = ""
+    var commonFollowers: String = ""
+    var signature: String = ""
+    var stories: [Story] = []
 }

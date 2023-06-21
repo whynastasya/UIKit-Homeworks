@@ -10,19 +10,22 @@ import UIKit
 final class NewsFeedViewController: UIViewController {
 
     private var newsFeedTableView = UITableView()
-    let usersWithStories = [
-        User(name: "ruskibeast", avatar: "ruskibeast"),
-        User(name: "ba1zhina", avatar: "ba1zhina"),
-        User(name: "antonerend", avatar: "antonerend"),
-        User(name: "ruslanonly", avatar: "ruslanonly"),
-        User(name: "1", avatar: "1"),
-        User(name: "1", avatar: "1"),
-        User(name: "1", avatar: "1"),
-        User(name: "1", avatar: "1"),
-        User(name: "1", avatar: "1"),
-        User(name: "1", avatar: "1"),
-        User(name: "1", avatar: "1"),
-        User(name: "1", avatar: "1")
+    private var refreshControl = UIRefreshControl()
+    
+    let stories = [
+        Story(name: "1", preview: "1"),
+        Story(name: "ruskibeast", preview: "ruskibeast"),
+        Story(name: "ba1zhina", preview: "ba1zhina"),
+        Story(name: "antonerend", preview: "antonerend"),
+        Story(name: "ruslanonly", preview: "ruslanonly"),
+        Story(name: "1", preview: "1"),
+        Story(name: "1", preview: "1"),
+        Story(name: "1", preview: "1"),
+        Story(name: "1", preview: "1"),
+        Story(name: "1", preview: "1"),
+        Story(name: "1", preview: "1"),
+        Story(name: "1", preview: "1"),
+        Story(name: "1", preview: "1")
     ]
     
     let usersPublications = [
@@ -67,24 +70,25 @@ final class NewsFeedViewController: UIViewController {
         newsFeedTableView = UITableView(frame: view.bounds, style: .plain)
         newsFeedTableView.backgroundColor = .black
         newsFeedTableView.register(PublicationTableViewCell.self, forCellReuseIdentifier: "post")
-        newsFeedTableView.register(StoriesTableViewCell.self, forCellReuseIdentifier: "stories")
+        newsFeedTableView.register(StoriesForNewsFeedTableViewCell.self, forCellReuseIdentifier: "stories")
         newsFeedTableView.register(UITableViewCell.self, forCellReuseIdentifier: "recommendation")
         newsFeedTableView.delegate = self
         newsFeedTableView.dataSource = self
+        newsFeedTableView.showsVerticalScrollIndicator = false
         view.addSubview(newsFeedTableView)
+        
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        newsFeedTableView.refreshControl = refreshControl
     }
     
-    private func  setupNavigationBar() {
+    private func setupNavigationBar() {
         let logoImageView = UIImageView()
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         logoImageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
         logoImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         logoImageView.image = UIImage(named: "logo")
         logoImageView.contentMode = .scaleAspectFit
-        navigationItem.leftBarButtonItems = [
-            UIBarButtonItem(customView: logoImageView),
-//            UIBarButtonItem(image: UIImage(systemName: "chevron.down")?.withTintColor(.white, renderingMode: .alwaysOriginal), style: .done, target: self, action: nil)
-        ]
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: logoImageView)
         
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(
@@ -92,13 +96,22 @@ final class NewsFeedViewController: UIViewController {
                 style: .plain, target: self, action: nil),
             UIBarButtonItem(
                 image: UIImage(systemName: "heart")?.withTintColor(.white, renderingMode: .alwaysOriginal),
-                style: .plain, target: self, action: nil)
+                style: .plain, target: self, action: #selector(presentNotificationsViewController))
         ]
         
         navigationController?.navigationBar.isTranslucent = false
         tabBarController?.tabBar.isTranslucent = false
+        navigationController?.hidesBarsOnSwipe = true
     }
 
+    @objc func refresh(refreshControl: UIRefreshControl) {
+        refreshControl.endRefreshing()
+    }
+    
+    @objc func presentNotificationsViewController() {
+        let notificationsViewController = NotificationsViewController()
+        navigationController?.pushViewController(notificationsViewController, animated: true)
+    }
 }
 
 extension NewsFeedViewController: UITableViewDelegate {
@@ -115,14 +128,10 @@ extension NewsFeedViewController: UITableViewDataSource {
             case 0:
                 let cell = tableView.dequeueReusableCell(
                     withIdentifier: "stories", for: indexPath
-                ) as! StoriesTableViewCell
+                ) as! StoriesForNewsFeedTableViewCell
                 cell.selectionStyle = .none
-                cell.configure(with: usersWithStories)
+                cell.configure(with: stories)
                 return cell
-//            case 3:
-//                let cell = tableView.dequeueReusableCell(withIdentifier: "recommendation", for: indexPath)
-//                cell.backgroundColor = .blue
-//                return cell
             default:
                 let cell = tableView.dequeueReusableCell(
                     withIdentifier: "post", for: indexPath
@@ -137,8 +146,6 @@ extension NewsFeedViewController: UITableViewDataSource {
         switch indexPath.row {
             case 0:
                 return 115
-//            case 3:
-//                return 320
             default:
                 return 650
         }

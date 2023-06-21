@@ -8,7 +8,7 @@
 import Foundation
 
 struct Publication {
-    let userName: String
+    var userName: String = ""
     let namePhotos: [String]
     let likes: Int
     let signature: String
